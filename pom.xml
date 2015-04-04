@@ -88,6 +88,8 @@
         <aspectj.version>1.6.12</aspectj.version>
         <netty.version>4.0.18.Final</netty.version>
         <hibernate.validator.version>5.1.1.Final</hibernate.validator.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <spring.data.jpa.version>1.7.0.RELEASE</spring.data.jpa.version>
     </properties>
 
     <dependencies>
@@ -321,6 +323,20 @@
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring.data.jpa.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.1.9.Final</version>
+		</dependency>
     </dependencies>
 </project>

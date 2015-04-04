@@ -36,6 +36,14 @@ public class UserController {
     @Resource
     private UserService userService;
 
+//    @Resource
+//    private UserRepository userRepo;
+//
+//    @RequestMapping(value = "/login", method = RequestMethod.GET)
+//    public String login() {
+//    	UserEntity findByEmail = userRepo.findByEmail("1@1.com");
+//		return null;
+//    } 
     /**
      * 用户登录
      * 
