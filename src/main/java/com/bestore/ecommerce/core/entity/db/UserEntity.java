@@ -1,5 +1,6 @@
 package com.bestore.ecommerce.core.entity.db;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -8,19 +9,24 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonManagedReference;
 import org.springframework.format.annotation.DateTimeFormat;
 
 
 @Entity
 @Table(name = "oc_customer")
-public class UserEntity extends BaseEntity<Integer>{
-	/*
-	 * 
-	 */
+public class UserEntity implements Serializable{
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	private int customer_id;
 	private int customer_group_id;
 	private int store_id;
 	private String firstname;
@@ -36,19 +42,26 @@ public class UserEntity extends BaseEntity<Integer>{
 	@Lob
 	@Column(columnDefinition="TEXT")
 	private String wishlist;
-	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = {CascadeType.ALL}, orphanRemoval = true)
+	@OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, orphanRemoval = true)
+	@JsonManagedReference
 	private List<AddressEntity> addresses;
 	private String ip;
-	@Column(columnDefinition = "BIT", length = 1)
+	@Column(columnDefinition = "tinyint", length = 1)
 	private boolean status;
-	@Column(columnDefinition = "BIT", length = 1)
+	@Column(columnDefinition = "tinyint", length = 1)
 	private boolean approved;
-	@Column(columnDefinition = "BIT", length = 1)
+	@Column(columnDefinition = "tinyint", length = 1)
 	private boolean safe;
 	private String token;
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date date_added;
-	
+	/*
+	 * 
+	 */
+	@PrePersist
+	protected void onCreate() {
+		date_added = new Date();
+	}
 	public int getCustomer_group_id() {
 		return customer_group_id;
 	}
@@ -160,4 +173,10 @@ public class UserEntity extends BaseEntity<Integer>{
 	public void setDate_added(Date date_added) {
 		this.date_added = date_added;
 	}
+    public Integer getId() {
+        return customer_id;
+    }
+    public void setId(int id) {
+        this.customer_id = id;
+    }
 }

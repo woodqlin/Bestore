@@ -1,20 +1,28 @@
 package com.bestore.ecommerce.core.entity.db;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonBackReference;
+
 @Entity
 @Table(name = "oc_address")
-public class AddressEntity extends BaseEntity<Integer> {
-	/*
-	 * 
-	 */
+public class AddressEntity implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	private int address_id;
 	@ManyToOne()
     @JoinColumn(name = "customer_id", nullable = false)
+	@JsonBackReference
     private UserEntity user;
 	private String firstname;
 	private String lastname;
@@ -25,7 +33,9 @@ public class AddressEntity extends BaseEntity<Integer> {
 	private String postcode;
 	private int country_id;
 	private int zone_id;
-	
+	/*
+	 * 
+	 */
 	@Lob
 	@Column(columnDefinition="TEXT")
 	private String custom_field;
@@ -96,4 +106,10 @@ public class AddressEntity extends BaseEntity<Integer> {
 	public void setCustom_field(String custom_field) {
 		this.custom_field = custom_field;
 	}
+    public Integer getId() {
+        return address_id;
+    }
+    public void setId(int id) {
+        this.address_id = id;
+    }
 }
