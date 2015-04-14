@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import org.codehaus.jackson.annotate.JsonBackReference;
 
 @Entity
-@Table(name = "oc_address")
+@Table(name = "address")
 public class AddressEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

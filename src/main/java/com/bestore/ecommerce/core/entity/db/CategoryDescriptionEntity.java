@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "oc_category_description")
+@Table(name = "category_description")
 public class CategoryDescriptionEntity implements Serializable{
     @Id
 	private int category_id;

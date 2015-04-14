@@ -7,6 +7,6 @@ import com.bestore.ecommerce.core.entity.db.CategoryEntity;
 
 
 @Repository
-public interface CategoryReppository extends CrudRepository<CategoryEntity, Integer>{
+public interface CategoryRepository extends CrudRepository<CategoryEntity, Integer>{
 	
 }

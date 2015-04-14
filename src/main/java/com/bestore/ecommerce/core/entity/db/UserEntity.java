@@ -22,7 +22,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 
 @Entity
-@Table(name = "oc_customer")
+@Table(name = "customer")
 public class UserEntity implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

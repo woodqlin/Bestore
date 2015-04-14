@@ -19,7 +19,7 @@ import javax.persistence.Table;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-@Table(name = "oc_category")
+@Table(name = "category")
 public class CategoryEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

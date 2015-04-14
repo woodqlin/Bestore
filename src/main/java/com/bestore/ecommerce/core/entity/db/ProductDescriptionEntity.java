@@ -9,7 +9,7 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "oc_product_description")
+@Table(name = "product_description")
 public class ProductDescriptionEntity implements Serializable{
     @Id
 	private int product_id;
