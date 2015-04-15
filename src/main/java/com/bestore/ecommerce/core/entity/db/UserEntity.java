@@ -14,14 +14,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 
 import org.codehaus.jackson.annotate.JsonManagedReference;
 import org.springframework.format.annotation.DateTimeFormat;
-
-import com.bestore.ecommerce.core.entity.db.cart.ShoppingCartEntity;
 
 
 @Entity
@@ -41,9 +38,6 @@ public class UserEntity implements Serializable{
 	private String salt;
 	@Lob
 	@Column(columnDefinition="TEXT")
-	private String cart;
-	@Lob
-	@Column(columnDefinition="TEXT")
 	private String wishlist;
 	@OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, orphanRemoval = true)
 	@JsonManagedReference
@@ -58,8 +52,7 @@ public class UserEntity implements Serializable{
 	private String token;
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date date_added;
-	@OneToOne(mappedBy = "user")
-	private ShoppingCartEntity shoppingCart;
+
 	/*
 	 * 
 	 */
@@ -120,12 +113,6 @@ public class UserEntity implements Serializable{
 	}
 	public void setSalt(String salt) {
 		this.salt = salt;
-	}
-	public String getCart() {
-		return cart;
-	}
-	public void setCart(String cart) {
-		this.cart = cart;
 	}
 	public String getWishlist() {
 		return wishlist;

@@ -115,18 +115,18 @@ CREATE TABLE IF NOT EXISTS `category_description` (
 DELETE FROM `category_description`;
 /*!40000 ALTER TABLE `category_description` DISABLE KEYS */;
 INSERT INTO `category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-	(28, 2, 'ÏÔÊ¾Æ÷', '&lt;p&gt;ÏÔÊ¾Æ÷&lt;br&gt;&lt;/p&gt;', 'ÏÔÊ¾Æ÷', 'ÏÔÊ¾Æ÷', ''),
-	(33, 2, 'ÕÕÏà»ú', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ÕÕÏà»ú', 'ÕÕÏà»ú', ''),
-	(32, 2, 'ÍøÂçÉãÏñ»ú', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ÍøÂçÉãÏñ»ú', 'ÍøÂçÉãÏñ»ú', ''),
-	(31, 2, 'É¨ÃèÒÇ', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'É¨ÃèÒÇ', '', ''),
-	(30, 2, '´òÓ¡»ú', '&lt;p&gt;´òÓ¡»ú&lt;br&gt;&lt;/p&gt;', '´òÓ¡»ú', '', ''),
+	(28, 2, 'ï¿½ï¿½Ê¾ï¿½ï¿½', '&lt;p&gt;ï¿½ï¿½Ê¾ï¿½ï¿½&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½Ê¾ï¿½ï¿½', 'ï¿½ï¿½Ê¾ï¿½ï¿½', ''),
+	(33, 2, 'ï¿½ï¿½ï¿½ï¿½ï¿½', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½', ''),
+	(32, 2, 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', ''),
+	(31, 2, 'É¨ï¿½ï¿½ï¿½ï¿½', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'É¨ï¿½ï¿½ï¿½ï¿½', '', ''),
+	(30, 2, 'ï¿½ï¿½Ó¡ï¿½ï¿½', '&lt;p&gt;ï¿½ï¿½Ó¡ï¿½ï¿½&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½Ó¡ï¿½ï¿½', '', ''),
 	(29, 2, 'Mice and Trackballs', '', '', '', ''),
 	(27, 2, 'Mac', '', '', '', ''),
-	(26, 2, '¸öÈËµçÄÔ', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '¸öÈËµçÄÔ', '', ''),
-	(17, 2, 'Èí¼þ', '&lt;p&gt;Èí¼þ&lt;br&gt;&lt;/p&gt;', 'Èí ¼þ', 'Èí¼þ', ''),
-	(25, 2, 'µçÄÔÅä¼þ', '&lt;p&gt;µçÄÔÅä¼þ&lt;br&gt;&lt;/p&gt;', 'µçÄÔÅä¼þ', 'µçÄÔÅä¼þ', 'µçÄÔÅä¼þ'),
-	(24, 2, 'ÊÖ»úºÍPDA', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ÊÖ»úºÍPDA', 'ÊÖ»úºÍPDA', ''),
-	(20, 2, 'Ì¨Ê½»ú', '&lt;p&gt;\r\n	Ì¨Ê½»ú&lt;/p&gt;\r\n', 'Ì¨Ê½»ú', 'Example of category description', ''),
+	(26, 2, 'ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½', '', ''),
+	(17, 2, 'ï¿½ï¿½ï¿½', '&lt;p&gt;ï¿½ï¿½ï¿½&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½ ï¿½ï¿½', 'ï¿½ï¿½ï¿½', ''),
+	(25, 2, 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '&lt;p&gt;ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½&lt;br&gt;&lt;/p&gt;', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'),
+	(24, 2, 'ï¿½Ö»ï¿½ï¿½PDA', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'ï¿½Ö»ï¿½ï¿½PDA', 'ï¿½Ö»ï¿½ï¿½PDA', ''),
+	(20, 2, 'Ì¨Ê½ï¿½ï¿½', '&lt;p&gt;\r\n	Ì¨Ê½ï¿½ï¿½&lt;/p&gt;\r\n', 'Ì¨Ê½ï¿½ï¿½', 'Example of category description', ''),
 	(35, 2, 'test 1', '', '', '', ''),
 	(36, 2, 'test 2', '', '', '', ''),
 	(37, 2, 'test 5', '', '', '', ''),
@@ -136,8 +136,8 @@ INSERT INTO `category_description` (`category_id`, `language_id`, `name`, `descr
 	(41, 2, 'test 8', '', '', '', ''),
 	(42, 2, 'test 9', '', '', '', ''),
 	(43, 2, 'test 11', '', '', '', ''),
-	(34, 2, 'MP3 ²¥·ÅÆ÷', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'MP3 ²¥·ÅÆ÷', 'MP3 ²¥·ÅÆ÷', ''),
-	(18, 2, '±Ê¼Ç±¾µçÄÔ', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '±Ê¼Ç±¾µçÄÔ', '±Ê¼Ç±¾µçÄÔ', ''),
+	(34, 2, 'MP3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'MP3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'MP3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', ''),
+	(18, 2, 'ï¿½Ê¼Ç±ï¿½ï¿½ï¿½ï¿½ï¿½', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', 'ï¿½Ê¼Ç±ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ê¼Ç±ï¿½ï¿½ï¿½ï¿½ï¿½', ''),
 	(44, 2, 'test 12', '', '', '', ''),
 	(45, 2, 'Windows', '', '', '', ''),
 	(46, 2, 'Macs', '', '', '', ''),
@@ -151,7 +151,7 @@ INSERT INTO `category_description` (`category_id`, `language_id`, `name`, `descr
 	(54, 2, 'test 22', '', '', '', ''),
 	(55, 2, 'test 23', '', '', '', ''),
 	(56, 2, 'test 24', '', '', '', ''),
-	(57, 2, 'Æ½°å', '&lt;p&gt;Æ½°å&lt;br&gt;&lt;/p&gt;', 'Æ½ °å', 'Æ½°å', ''),
+	(57, 2, 'Æ½ï¿½ï¿½', '&lt;p&gt;Æ½ï¿½ï¿½&lt;br&gt;&lt;/p&gt;', 'Æ½ ï¿½ï¿½', 'Æ½ï¿½ï¿½', ''),
 	(58, 2, 'test 25', '', '', '', '');
 /*!40000 ALTER TABLE `category_description` ENABLE KEYS */;
 
@@ -325,42 +325,12 @@ INSERT INTO `product_description` (`product_id`, `language_id`, `name`, `descrip
 /*!40000 ALTER TABLE `product_description` ENABLE KEYS */;
 
 
-# Dumping structure for table bestore.shopingcart
-DROP TABLE IF EXISTS `shopingcart`;
-CREATE TABLE IF NOT EXISTS `shopingcart` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `userid` int(10) DEFAULT NULL,
-  `cart_id` int(10) DEFAULT NULL,
-  `cart_item_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
-# Dumping data for table bestore.shopingcart: ~2 rows (approximately)
-DELETE FROM `shopingcart`;
-/*!40000 ALTER TABLE `shopingcart` DISABLE KEYS */;
-INSERT INTO `shopingcart` (`id`, `userid`, `cart_id`, `cart_item_id`) VALUES
-	(1, 4, 4, 1),
-	(2, 4, 4, 2);
-/*!40000 ALTER TABLE `shopingcart` ENABLE KEYS */;
-
-
 # Dumping structure for table bestore.shoppingcart_item
 DROP TABLE IF EXISTS `shoppingcart_item`;
 CREATE TABLE IF NOT EXISTS `shoppingcart_item` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) DEFAULT NULL,
   `product_id` int(10) DEFAULT NULL,
   `quantity` int(10) DEFAULT NULL,
-  `cart_id` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
-# Dumping data for table bestore.shoppingcart_item: ~2 rows (approximately)
-DELETE FROM `shoppingcart_item`;
-/*!40000 ALTER TABLE `shoppingcart_item` DISABLE KEYS */;
-INSERT INTO `shoppingcart_item` (`id`, `product_id`, `quantity`, `cart_id`) VALUES
-	(1, 28, 3, 4),
-	(2, 29, 4, 4);
-/*!40000 ALTER TABLE `shoppingcart_item` ENABLE KEYS */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
